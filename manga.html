@@ -40,7 +40,7 @@
                         <span class="old-price">5 800 ₸</span>
                         <span class="price">5 220 ₸</span>
                     </div>
-                    <button class="btn-buy">Купить</button>
+                    <button class="btn-buy" id="btn">Купить</button>
                 </div>
             </div>
         </div>
@@ -772,6 +772,33 @@
         </div>
 
     </div>
+ 
+<div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Оплата заказа</h2>
+        <p>Введите данные банковской карты для завершения покупки.</p>
+        
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardNumber">Номер карты</label>
+                <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" style="width: 350px;">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="cardDate">Срок (ММ/ГГ)</label>
+                    <input type="text" id="cardDate" placeholder="MM/YY" style="width: 230px;">
+                </div>
+                <div class="form-group">
+                    <label for="cardCvc">CVC / CVV</label>
+                    <input type="password" id="cardCvc" placeholder="123" style="width: 100px;">
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">Оплатить</button>
+        </form>
+    </div>
+</div>
 
+    <script src="./manga.js"></script>
 </body>
 </html>
