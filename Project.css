@@ -1,16 +1,16 @@
-html {
+* {
     scroll-behavior: smooth !important;
 }
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 header {
     position: fixed;
     width: 100%;
     height: 70px;
     z-index: 1000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .header.scrolled {
   background-color: rgb(255, 166, 0); 
@@ -46,7 +46,6 @@ ul li {
     float: left;
 }
 ul li a {
-
     color: rgb(5, 5, 5);
     text-align: center;
     padding: 14px 16px; 
@@ -105,6 +104,9 @@ ul li a:hover {
      background-color: orange;
      color: white;
 }
+section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   
+}
 .shop {
    width: 100%;
    display: flex;
@@ -156,6 +158,10 @@ ul li a:hover {
      background-color: orange;
      color: white;
 }
+.manga img:hover {
+    scale: 1.08;
+    transition: 0.6s;
+}
 .promo-section {
     display: flex;
     gap: 40px;
@@ -163,7 +169,6 @@ ul li a:hover {
     max-width: 1200px;
     margin: 80px auto;
     padding: 0 20px;
-    font-family: Arial, sans-serif
   }
 
   .promo-section.reverse {
@@ -172,6 +177,10 @@ ul li a:hover {
 
   .promo-image-box {
     flex: 1;
+  }
+  .promo-image-box img:hover {
+    scale: 1.08;
+    transition: 0.6s;
   }
 
   .promo-image {
@@ -239,7 +248,7 @@ ul li a:hover {
      background-color: orange;
      color: white;
 }
-  
+
 .news-card {
     width: 100%;
     display: grid;
@@ -295,52 +304,9 @@ ul li a:hover {
     margin-left: 25px;
     color: #9a9a95;
 }
-.news-card3 {
-    border-radius: 12px;
-    background-color: #1e1e24;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 26px;
-    border: 1px solid #2d2d35;
-}
-
-.news-card3 img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-
-.news-card3 h2 {
-    font-size: 20px;
-    line-height: 1.4;
-    margin-left: 25px;
-    font-weight: bold;
-    color: #ffffff;
-    cursor: pointer;
-    transition: color 0.2s ease;
-}
-
-.news-card3 h2:hover{
-    color: #ff4a5a;
-}
-
-.news-card3 p.avtor {
-    font-size: 13px;
-    margin-left: 25px;
-    color: #7a7a85;
-}
-
-.news-card3 p.avtor span {
-    color: #a5a5b0;
-    font-weight: bold;
-}
-
-.news-card3 p.text {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-left: 25px;
-    color: #9a9a95;
+.news-card2:hover {
+    scale: 1.08;
+    transition: 0.6s ease;
 }
 .about {
     width: 100%;
@@ -353,8 +319,15 @@ ul li a:hover {
     text-align: center;
 }
 .about img {
-    width: 400px;
-    overflow: hidden;
+    width: 650px;
+}
+.about img:hover {
+    scale: 1.08;
+    transition: 0.6s;
+}
+.about p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
 }
 .footer {
   background-color: black;
@@ -371,7 +344,7 @@ ul li a:hover {
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .f2 {
